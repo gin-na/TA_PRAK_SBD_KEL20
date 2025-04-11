@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Pelanggan - Rental Mobil</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login Pelanggan</h2>
+      <form id="loginUserForm">
+        <input
+          type="text"
+          placeholder="Email / Username"
+          id="username"
+          required
+        />
+        <input type="password" placeholder="Password" id="password" required />
+        <button type="submit">Login</button>
+        <p class="login-link">
+          Login sebagai <a href="login-admin.html">Admin?</a>
+        </p>
+      </form>
+    </div>
+
+    <script>
+      document
+        .getElementById("loginUserForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Simulasi login (nanti diganti AJAX/backend)
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+
+          if (username === "user" && password === "1234") {
+            alert("Login berhasil sebagai pelanggan!");
+            window.location.href = "dashboard-user.html";
+          } else {
+            alert("Username atau password salah!");
+          }
+        });
+    </script>
+  </body>
+</html>

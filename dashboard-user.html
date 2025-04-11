@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><h1>Rental Mobil</h1></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <span class="logo">Rental Mobil</span>
+      </div>
+      <div class="nav-right">
+        <a href="dashboard-user.html">Beranda</a>
+        <a href="#">Daftar Mobil</a>
+        <a href="#">Sewa Mobil</a>
+        <a href="#">Riwayat Sewa</a>
+        <a href="login-user.html">Logout</a>
+      </div>
+    </nav>
+
+    <main class="user-dashboard">
+      <section id="mobil">
+        <h2>Daftar Mobil Tersedia</h2>
+        <input type="text" id="searchMobil" placeholder="Cari mobil..." />
+        <div id="mobilList">
+          <!-- List mobil akan ditampilkan di sini -->
+        </div>
+      </section>
+
+      <section id="sewa">
+        <h2>Form Sewa Mobil</h2>
+        <form id="formSewa">
+          <input type="text" placeholder="ID Mobil" required />
+          <input type="date" placeholder="Tanggal Sewa" required />
+          <input type="date" placeholder="Tanggal Kembali" required />
+          <button type="submit">Sewa</button>
+        </form>
+      </section>
+
+      <section id="riwayat">
+        <h2>Riwayat Sewa Anda</h2>
+        <div id="riwayatList">
+          <!-- Riwayat sewa akan tampil di sini -->
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

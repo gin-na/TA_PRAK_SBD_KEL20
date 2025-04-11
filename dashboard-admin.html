@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Admin - Rental Mobil</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <span class="logo">Rental Mobil</span>
+      </div>
+      <div class="nav-right">
+        <a href="dashboard-user.html">Beranda</a>
+        <a href="#">Daftar Mobil</a>
+        <a href="#">Sewa Mobil</a>
+        <a href="#">Riwayat Sewa</a>
+        <a href="login-admin.html">Logout</a>
+      </div>
+    </nav>
+
+    <main class="admin-dashboard">
+      <section id="mobil">
+        <h2>Data Mobil</h2>
+        <button onclick="showAddMobilForm()">Tambah Mobil</button>
+        <input type="text" id="searchMobilAdmin" placeholder="Cari mobil..." />
+        <div id="mobilTable">
+          <!-- Data mobil akan ditampilkan di sini (CRUD + Soft/Hard Delete) -->
+        </div>
+      </section>
+
+      <section id="pelanggan">
+        <h2>Data Pelanggan</h2>
+        <div id="pelangganTable">
+          <!-- Data pelanggan akan ditampilkan di sini -->
+        </div>
+      </section>
+
+      <section id="rental">
+        <h2>Data Transaksi Rental</h2>
+        <div id="rentalTable">
+          <!-- Tabel hasil JOIN data rental, pelanggan, mobil -->
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
